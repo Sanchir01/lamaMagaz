@@ -1,0 +1,13 @@
+.block{
+    &:hover{
+        .img4{
+            z-index: 20;
+            transition: all 1s ease-in-out;
+        }
+    }
+    @apply w-full h-[400px] overflow-hidden relative
+    
+}
+.img4{
+      @apply  w-full h-full object-cover absolute
+    }

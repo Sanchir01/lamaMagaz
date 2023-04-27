@@ -33,7 +33,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className='text-4xl'>
-					<Link to='/'>Sandjma</Link>
+					<Link className='uppercase' to='/'>sanchir-shop</Link>
 				</div>
 				<div className='flex gap-6 items-center'>
 					<div className=''>

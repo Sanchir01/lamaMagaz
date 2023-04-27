@@ -2,6 +2,9 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
+import WestOutlinedIcon from '@mui/icons-material/WestOutlined'
+import EastOutlinedIcon from '@mui/icons-material/EastOutlined'
+
 const SwiperSanchir = () => {
 	const sliderData: string[] = [
 		'https://img2.akspic.ru/crops/6/5/6/9/6/169656/169656-devushka_s_korotkimi_volosami-model-ryzhie_volosy-volosy-krasota-1920x1080.jpg',
@@ -9,12 +12,13 @@ const SwiperSanchir = () => {
 		'https://img2.akspic.ru/previews/3/3/9/1/3/131933/131933-model-krasota-ledi-zheltyj-lico-x750.jpg'
 	]
 	const settings = {
-        dots:true,
+		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-        
+		initialSlide: 0,
+		arrows: false
 	}
 	return (
 		<div className='w-full'>
@@ -22,8 +26,8 @@ const SwiperSanchir = () => {
 				<Slider {...settings}>
 					{sliderData.map(slider => (
 						<img
-                        
-							className='w-[100vh] h-[100vh] object-cover'
+							key={slider}
+							className='w-[100vh] h-[100vh] object-cover object-center '
 							src={slider}
 							alt={slider}
 						/>
