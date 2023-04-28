@@ -2,8 +2,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-import WestOutlinedIcon from '@mui/icons-material/WestOutlined'
-import EastOutlinedIcon from '@mui/icons-material/EastOutlined'
+
 
 const SwiperSanchir = () => {
 	const sliderData: string[] = [

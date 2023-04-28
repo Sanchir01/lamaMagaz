@@ -1,7 +1,6 @@
-// @ts-ignore
 import Categories from '../../Components/Categories/Categories.tsx'
+import Contacts from '../../Components/Contact/Contacts.tsx'
 import FuetuteProduct from '../../Components/FuetureProducts/FuetuteProduct.tsx'
-import Slider from '../../Components/Slider/Slider'
 import SwiperSanchir from '../../Components/Swiperslider/Swiper.tsx'
 
 const Home = () => {
@@ -11,6 +10,7 @@ const Home = () => {
 			<FuetuteProduct type='Featuring'/>
 			<Categories/>
 			<FuetuteProduct type='Trending'/>
+			<Contacts/>
 		</div>
 	)
 }

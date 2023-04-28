@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import  { FC } from 'react'
 import { FuetureProduct } from '../../../interface/FooterInterface'
 import { Link } from 'react-router-dom'
 
@@ -17,7 +17,7 @@ const Card: FC<FuetureProduct> = ({
 		<Link className='mt-20' to={`/product/${id}`}>
 			<div className='w-[300px] flex flex-col gap-2'>
 				<div className={styles.block}>
-					{isNew && <span className='absolute top-2 left-1 z-40 py-2 px-1 bg-white text-pink-600'>New Season</span>}
+					{isNew && <span className='flex-wrap absolute top-2 left-1 z-40 py-2 px-1 bg-white text-pink-600'>New Season</span>}
 					<img
 						src={img}
 						alt={img}
